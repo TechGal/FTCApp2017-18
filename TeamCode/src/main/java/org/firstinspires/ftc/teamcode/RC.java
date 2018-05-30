@@ -1,15 +1,14 @@
 package org.firstinspires.ftc.teamcode;
 
 import android.content.Context;
+import android.provider.Settings;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 import org.firstinspires.ftc.robotcontroller.internal.FtcRobotControllerActivity;
-import org.firstinspires.ftc.robotcontroller.internal.GlobalValuesActivity;
 import org.firstinspires.ftc.robotcore.internal.system.AppUtil;
-import org.firstinspires.ftc.teamcode.roboticslibrary.FXTTelemetry;
 
 /**
  * Created by FIXIT on 15-08-21.
@@ -48,7 +47,7 @@ public class RC {
     }//activity
 
     public static void stop() {
-        t.close();
+        System.out.println("Stopped");
     }//stop
 
 
